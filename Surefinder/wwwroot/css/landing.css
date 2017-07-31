@@ -27,5 +27,11 @@ h2 {
 }
 
 .btn-landing:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+}
+
+.row-background {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url('../images/crisp_paper_ruffles/crisp_paper_ruffles/crisp_paper_ruffles.png');
 }

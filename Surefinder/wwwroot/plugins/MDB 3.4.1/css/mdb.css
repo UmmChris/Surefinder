@@ -3386,9 +3386,22 @@ button.btn-floating {
   line-height: 1.5;
 }
 
+.btn-dark {
+    color: #fff;
+    background: #333;
+}
+
+.btn-dark:hover, .btn-dark:focus {
+    background-color: #222 !important;
+    color: #fff !important;
+}
+
+
 /*********************
   Navbar
 **********************/
+
+/*
 .navbar {
   border: 0;
   border-radius: 0;
@@ -3593,6 +3606,8 @@ fieldset[disabled] .navbar .navbar-link:focus {
     font-size: 20px;
   }
 }
+
+*/
 
 /*********************
   Shadows
