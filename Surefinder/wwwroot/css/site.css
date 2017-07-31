@@ -48,3 +48,11 @@ textarea {
         display: none;
     }
 }
+
+/* bootstrap navbar */
+.navbar-nav > li > a {
+    color: black;
+    font-family: 'Segoe UI';
+    font-weight: 400;
+    font-size: 1.15em;
+}
