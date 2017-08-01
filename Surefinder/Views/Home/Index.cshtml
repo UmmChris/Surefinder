@@ -10,24 +10,79 @@
     new WOW().init();
 </script>
 
+<!-- Modal -->
+<div class="modal fade" id="buyModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div id="buyModalBody" class="modal-body">
+                <div class="row">
+                    <div class="col-xs-12">
+
+                        <div class="col-xs-6">
+                            <h5>enter you zip</h5>
+                        </div>
+                        <div class="col-xs-6 text-right">
+                            <p>
+                                <span class="glyphicon glyphicon-arrow-left hidden" style="padding-right: 10px; font-size: 0.75em;"></span>
+                                1 / 5
+                                <span class="glyphicon glyphicon-arrow-right" style="padding-left: 10px; font-size: 0.75em;"></span>
+                            </p>
+                        </div>
+
+                        <div class="col-xs-12">
+                            <hr />
+                        </div>
+
+                        <div class="col-xs-12">
+
+                            <form asp-action="ClientFormZip">
+                                <div class="form-horizontal">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="form-group text-center">
+                                        <label class="col-md-12">Zip Code</label>
+                                        <div class="col-xs-12">
+                                            <input type="text"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <div class="col-xs-12">
+                                            <input type="submit" value="Next" class="btn btn-default" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+
 <div class="row" id="landing-row">
     <div class="col-xs-12 text-center" style="padding-top: 50px;">
 
-        <a class="btn btn-dark btn-landing wow zoomIn" style="width: 140px;">
+        <a class="btn btn-dark btn-landing wow zoomIn" style="width: 140px;" data-toggle="modal" data-target="#buyModal">
             <span class="glyphicon glyphicon-home" style="font-size: 2.5em; margin: 5px;"></span>
             <br />
             Buy
         </a>
-        <div class="btn btn-dark btn-landing wow zoomIn" style="width: 140px;">
+        <a class="btn btn-dark btn-landing wow zoomIn disabled" style="width: 140px;">
             <span class="glyphicon glyphicon-usd"  style="font-size: 2.5em; margin: 5px;"></span>
             <br />
             Sell
-        </div>
-        <div class="btn btn-dark btn-landing wow zoomIn" style="width: 140px;">
+        </a>
+        <a class="btn btn-dark btn-landing wow zoomIn disabled" style="width: 140px;">
             <span class="glyphicon glyphicon-resize-horizontal"  style="font-size: 2.5em; margin: 5px;"></span>
             <br />
             Both
-        </div>
+        </a>
 
     </div>
 
@@ -151,4 +206,16 @@
 
         </div>
     </div>
+</div>
+
+<div class="row landing-form-row" style="padding: 15px;">
+    <div class="col-xs-12">
+        <div class="col-xs-12 col-lg-8 col-lg-offset-2 text-center">
+            <h5>
+                
+            </h5>
+
+        </div>
+    </div>
+   
 </div>

@@ -35,3 +35,7 @@ h2 {
     padding-bottom: 30px;
     background-image: url('../images/crisp_paper_ruffles/crisp_paper_ruffles/crisp_paper_ruffles.png');
 }
+
+.landing-form-row{
+    background: #666;
+}
