@@ -15,6 +15,10 @@ namespace Surefinder.Data
         {
         }
 
+        public DbSet<Company> Company { get; set; }
+        public DbSet<Realtor> Realtor { get; set; }
+        public DbSet<Zip> Zip { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

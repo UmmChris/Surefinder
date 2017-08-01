@@ -8,9 +8,10 @@ using Surefinder.Data;
 namespace Surefinder.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20170731230144_init-zip-realtor-company")]
+    partial class initziprealtorcompany
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -269,8 +270,8 @@ namespace Surefinder.Data.Migrations
                 {
                     b.Property<int>("ZipID");
 
-                    b.Property<string>("State")
-                        .HasMaxLength(2);
+                    b.Property<int>("State")
+                        .HasMaxLength(25);
 
                     b.Property<string>("Status")
                         .HasMaxLength(10);
